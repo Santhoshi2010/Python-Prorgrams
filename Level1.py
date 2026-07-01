@@ -459,7 +459,7 @@ else:
     result=(num2//100)+((num2//10)%10)+(num2%10)  
 
 print(result)  
-print(num1)  
+
 
 
 

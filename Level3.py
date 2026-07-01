@@ -93,33 +93,113 @@
 # format.
 # Output  :  Input: 100 Output: 2 . Input: 1060030 Output: 4.
 
-def find_number_of_zeros(num):
+# def find_number_of_zeros(num):
+#     count=0
+#     while num>0:
+#         digit=num%10
+#         if digit==0:
+#             count=count+1
+#         num=num//10
+#     return count    
+# def main():
+#     number = int(input("Enter a number: "))
+#     result = find_number_of_zeros(number)
+#     print(result)
+# if __name__=="__main__":
+#     main()    
+
+# Problem 6 
+# Question :Get a number from user and reverse that number and print. Write 
+# your code inside the function. Do not Change the format.
+# Output  :   Input: 123 Output: 321. Input: 56789 Output: 98765.
+
+# def reverse_number(num):
+#     rev=0
+#     while num>0:
+#         digit=num%10
+#         rev=rev*10+digit
+#         num//=10
+#     return rev    
+# def main():
+
+#     number = int(input("Enter a number: "))
+#     result = reverse_number(number)
+
+#     print(f"The reversed number is: {result}")
+# if __name__ == "__main__":
+#     main()
+
+#  Problem 7 
+# Question :Get two numbers from user and compare the numbers. If same 
+# print “Same” otherwise print “Not Same”. Write your code inside the function. Do not Change the format.
+# Output  : Input: 123, 123 Output: Same. Input: 56789,12345 Output: “Not Same”
+
+
+# def function(no1):
+#     no2 = int(input("Enter another number: "))
+#     if no1 == no2:
+#         print("Same")
+#     else:
+#         print("Not Same")    
+#     # return no2
+
+# def main():
+#     number1 = int(input("Enter a number: "))
+#     number2 = function(number1)
+#     # print(number2)
+# if __name__ == "__main__":
+#     main()
+
+
+# Problem 8 
+# Question :Get a number from user and check whether the digits are in ascending order.
+# Output  :  Input: 1234 Output: Yes. Input: 5687 Output: No
+
+# def check_assending(no):
+#     temp=no
+#     prev=10
+#     while temp>0:
+#         digit=temp%10
+#         if digit>prev:
+#             return "No"
+#         prev=digit
+#         temp=temp//10
+#     return "Yes"       
+# def main():
+#     number1 = int(input("Enter a number: "))
+#     print(check_assending(number1))
+    
+# if __name__ == "__main__":
+#     main()
+
+# Problem 9 
+# Question :Get a two-digit number from user swap the digits.
+# Output  :  Input: 34 Output: 43. Input: 56 Output: 65
+
+# def swapNumbers(no):
+#     number2=int(input("Enter a two-digit number: "))
+#     no,number2=number2,no
+#     return no,number2
+# def main():
+#     number1=int(input("Enter two-digit number: "))
+#     result1,result2=swapNumbers(number1)
+#     print(f"Swapped numbers are: {result1} and {result2}")
+# if __name__=="__main__":
+#     main()  
+
+# Problem 10 
+# Question : Get a number from user, find the number of digits and print the same.
+# Output  : Input: 34678 Output: 5. Input: 12345678 Output: 8
+
+def count_Digits(no):
     count=0
-    while num>0:
-        digit=num%10
-
-        if digit==0:
-            count=count+1
-        num=num//10
-    return count    
-
-
+    while no>0:
+        digit=no%10
+        count+=1
+        no//=10
+    return count
 def main():
-
-    number = int(input("Enter a number: "))
-    result = find_number_of_zeros(number)
-
-    print(result)
-
+    number=int(input("Enter a number: "))
+    print(count_Digits(number))
 if __name__=="__main__":
-    main()    
-
-
-
-
-
-
-
-
-
-
+    main()
